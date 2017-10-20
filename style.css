@@ -264,8 +264,8 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
+	color: black;
+	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -273,6 +273,8 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
 }
 
 p {
@@ -353,8 +355,15 @@ ul, ol {
 	margin: 0 0 1.5em 3em;
 }
 
-ul {
-	list-style: disc;
+.home .entry-content ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.home .entry-content ul li {
+	background: url('img/check.png') no-repeat left center;
+	padding: 20px 0px 20px 50px;
+	margin: 0;
 }
 
 ol {
@@ -502,14 +511,23 @@ a:hover, a:active {
 	outline: 0;
 }
 
+.site-branding {
+	float: left;
+	margin: 20px;
+	height: 40px;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
+	/*clear: both;*/
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	/*width: 100%;*/
+	text-transform: uppercase;
+	margin: 10px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .main-navigation ul {
@@ -550,11 +568,15 @@ a:hover, a:active {
 .main-navigation li {
 	float: left;
 	position: relative;
+	padding: 10px;
+	line-height: 40px;
+	font-weight: bold;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: black;
 }
 
 /* Small menu. */
@@ -773,7 +795,8 @@ object {
 
 /* Make sure logo link wraps around logo image. */
 .custom-logo-link {
-	display: inline-block;
+	display: block;
+	height: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -782,6 +805,7 @@ object {
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+	min-width: 20em;
 }
 
 .wp-caption img[class*="wp-image-"] {
@@ -846,4 +870,140 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+.custom-logo {
+	display: block;
+	height: 100%;
+	width: auto;
+}
+
+
+.banner-content-container {
+	display: block;
+	width: 100%;
+	top: 20%;
+	position: absolute;
+}
+
+.button-box {
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+.banner-button {
+	width: 160px;
+	padding: 10px;
+	display: block;
+	margin: 0px auto;
+}
+
+
+
+.site-title {
+	
+}
+
+.site-footer{
+	color: white;
+	background-color: #5b4d41;
+}
+
+/*body {
+	background-color: #5b4d41;
+}*/
+
+.site {
+	background-color: white;
+}
+
+.widget-column {
+	width: 50%;
+	float:left;
+	padding: 20px;
+}
+
+.home article.post {
+	padding: 50px 0px;
+}
+
+.home p, .home ul {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+/*buttons*/
+.home .entry-content a, .entry-content input[type="submit"]{
+	display: inline-block;
+	width: 300px;
+	padding: 10px;
+	margin: 10px;
+	background-color: #a7bf42;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+	border: none;
+	font-weight: bold;
+}
+
+.home .entry-content a:hover, .entry-content input[type="submit"]:hover {
+	background-color: #e39a60;
+}
+
+.entry-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.home .entry-content {
+	max-width: none;
+	text-align: center;
+}
+
+article.has-post-thumbnail {
+	background-size: cover;
+	color: white;
+}
+
+.entry-title {
+	display: block;
+	text-align: center;
+}
+
+table, th, td {
+   border: 1px solid grey;
+   padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*TODO: this should not apply to all images but only to logos; */
+.entry-content img {
+	margin: 25px;
+}
+
+.home figure{
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px;
+}
+
+.logo-box {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.site-footer, body {
+	background-color: #5b4d41;
+}
+
+.site-footer {
+	text-align: center;
+	padding: 10px;
 }

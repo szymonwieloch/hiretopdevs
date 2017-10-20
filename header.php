@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700|Open+Sans:400,700,700i" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -28,6 +29,7 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
+			/*
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php else : ?>
@@ -37,9 +39,10 @@
 
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $description;  ?></p>
+
 			<?php
-			endif; ?>
+			endif; */?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
